@@ -8,8 +8,7 @@ while True:
             'цена': int(input('Цена: ')),
             'количество': int(input('Количество: ')),
             'ед': input('Единицы измерения: ')
-        }
-        i = 0
+        }       
         goods.append(tuple([goods_num, prod_dict]))
         goods_num += 1
     else:
@@ -25,3 +24,4 @@ for el in goods:
 goods_dict = {key: list(set(value)) for key, value in goods_dict.items()}
 for key, value in goods_dict.items():
     print(f'{key}: {value}')
+    
